@@ -3,7 +3,9 @@ def fizzbuzz(number)
 		'fizz'
 	elsif number == 5
 		'buzz'
-	elsif number == 15
+	elsif number%3 ==0 && number%5 == 0
 		'fizzbuzz'
+	elsif number.to_i != number
+		"must be an integer"
 	end
 end
