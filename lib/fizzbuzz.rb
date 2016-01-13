@@ -1,11 +1,18 @@
-def fizzbuzz(number)
-	if number == 3
-		'fizz'
-	elsif number == 5
-		'buzz'
-	elsif number%3 ==0 && number%5 == 0
-		'fizzbuzz'
-	elsif number.to_i != number
-		"must be an integer"
+class Integer
+	def fizzbuzz
+		if self %3 == 0 && self %5 == 0
+			'fizzbuzz'
+		elsif self %3 ==0
+			'fizz'
+		elsif self % 5 == 0
+			'buzz'
+		elsif self.to_i != self
+			"must be an integer"
+		elsif self %3 != 0 || self %5 != 0
+			self
+		end
 	end
 end
+
+
+

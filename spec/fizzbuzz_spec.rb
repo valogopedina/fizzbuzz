@@ -2,26 +2,31 @@ require 'fizzbuzz'
 
 describe 'fizzbuzz' do
 	it 'return fizz when passed 3' do
-		expect(fizzbuzz(3)).to eq 'fizz'
+		expect(3.fizzbuzz).to eq 'fizz'
 	end
 end
 describe 'fizzbuzz' do
 	it 'return buzz when passed 5' do
-		expect(fizzbuzz(5)).to eq 'buzz'
+		expect(5.fizzbuzz).to eq 'buzz'
 	end
 end
 describe 'fizzbuzz' do
 	it 'return fizzbuzz when passed 15' do
-		expect(fizzbuzz(15)).to eq 'fizzbuzz'
+		expect(15.fizzbuzz).to eq 'fizzbuzz'
 	end
 end
 describe 'fizzbuzz' do
 	it 'return fizzbuzz when passed 30' do
-		expect(fizzbuzz(30)).to eq 'fizzbuzz'
+		expect(30.fizzbuzz).to eq 'fizzbuzz'
 	end
 end
 describe 'fizzbuzz' do
-	it 'return "must be an integer" when passed a' do
-		expect(fizzbuzz("a")).to eq 'must be an integer'
+	it 'return 7 when passed 7' do
+		expect(7.fizzbuzz).to eq 7
+	end
+end
+describe 'fizzbuzz' do
+	it 'return buzz when passed 50' do
+		expect(50.fizzbuzz).to eq 'buzz'
 	end
 end
