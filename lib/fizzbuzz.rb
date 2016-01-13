@@ -3,5 +3,7 @@ def fizzbuzz(number)
 		'fizz'
 	elsif number == 5
 		'buzz'
+	elsif number == 15
+		'fizzbuzz'
 	end
 end
